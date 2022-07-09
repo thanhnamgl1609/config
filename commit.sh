@@ -1,9 +1,6 @@
 #! /bin/zsh
-
 git add .
-git commit -a -m "$(date +'%d%m%Y%H%M')"
-expect << EOD
-/bin/git push origin main
+git commit -a -m Config
+git push origin main
 send "Thanhnamgl123580"
-EOD
 
