@@ -1,0 +1,68 @@
+{
+    "tabnine.experimentalAutoImports": true,
+    "workbench.editor.untitled.hint": "hidden",
+    "editor.fontFamily": "'DejaVuSansMono Nerd Font', 'monospace', monospace, 'Droid Sans Fallback'",
+    "editor.fontSize": 15,
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.factorypath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/node_modules": true
+    },
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false,
+    "debug.onTaskErrors": "showErrors",
+    "workbench.iconTheme": "vscode-icons",
+    "liveServer.settings.donotShowInfoMsg": true,
+    "update.showReleaseNotes": false,
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "prettier.singleQuote": true,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "prettier.printWidth": 70,
+    "search.quickOpen.includeHistory": false,
+    "workbench.colorTheme": "Dracula",
+    "editor.inlineSuggest.enabled": true,
+    "security.workspace.trust.untrustedFiles": "newWindow",
+    "kite.showWelcomeNotificationOnStartup": false,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "html.autoClosingTags": true,
+    "typescript.autoClosingTags": false,
+    "search.useIgnoreFiles": false,
+    "debug.javascript.autoAttachFilter": "disabled",
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.python"
+    },
+    "terminal.integrated.enableMultiLinePasteWarning": false,
+    "github.copilot.enable": {
+        "*": true,
+        "yaml": false,
+        "plaintext": false,
+        "markdown": true
+    },
+    "editor.tabSize": 2,
+    "tailwindCSS.classAttributes": [
+        "class",
+        "className",
+        "ngClass",
+        "row-class-name"
+    ],
+    "prettier.proseWrap": "always",
+    "prettier.trailingComma": "none",
+    "prettier.configPath": ".prettierrc",
+    "[php]": {
+        "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+    }
+}
