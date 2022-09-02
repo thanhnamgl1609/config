@@ -6,5 +6,5 @@
   "singleQuote": true,
   "singleAttributePerLine": true,
   "vueIndentScriptAndStyle": false,
-  "trailingComma": "none"
+  "trailingComma": "all"
 }

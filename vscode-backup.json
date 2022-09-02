@@ -1,4 +1,5 @@
 {
+  "tabnine.experimentalAutoImports": true,
   "workbench.editor.untitled.hint": "hidden",
   "editor.fontFamily": "'DejaVuSansMono Nerd Font', 'monospace', monospace, 'Droid Sans Fallback'",
   "editor.fontSize": 15,
@@ -35,6 +36,7 @@
   "workbench.colorTheme": "Dracula",
   "editor.inlineSuggest.enabled": true,
   "security.workspace.trust.untrustedFiles": "newWindow",
+  "kite.showWelcomeNotificationOnStartup": false,
   "typescript.updateImportsOnFileMove.enabled": "always",
   "html.autoClosingTags": true,
   "typescript.autoClosingTags": false,
@@ -58,7 +60,11 @@
     "row-class-name"
   ],
   "prettier.proseWrap": "always",
+  "prettier.trailingComma": "none",
   "prettier.configPath": ".prettierrc",
+  "[php]": {
+    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+  },
   "[dockerfile]": {
     "editor.defaultFormatter": "ms-azuretools.vscode-docker"
   },
@@ -69,40 +75,6 @@
   },
   "[typescript]": {
     "editor.defaultFormatter": "vscode.typescript-language-features"
-  },
-  "vim.leader": ",",
-  "vim.handleKeys": {
-    "<C-f>": false,
-  },
-  "vim.normalModeKeyBindingsNonRecursive": [{
-    "before": ["<leader>", "n", "f"],
-    "commands": ["explorer.newFile"],
-    "silent": true
-  }, {
-    "before": ["<leader>", "n", "F"],
-    "commands": ["explorer.newFolder"],
-    "silent": true
-  }, {
-    "before": ["<leader>", "t", "t"],
-    "commands": ["workbench.action.toggleSidebarVisibility"]
-  }, {
-    "before": ["g", "d"],
-    "commands": ["editor.action.revealDefinition"]
-  }, {
-    "before": ["g", "b"],
-    "commands": ["workbench.action.navigateBack"]
-  }, {
-    "before": ["B"],
-    "commands": ["editor.action.jumpToBracket"]
-  }],
-  "vim.insertModeKeyBindingsNonRecursive": [{
-    "before": ["<C->>"],
-    "after": ["hideSuggestWidget"]
-  }],
-  "vim.visualModeKeyBindingsNonRecursive": [{
-    "before": ["<leader>", "e"],
-    "commands": ["editor.action.smartSelect.expand"]
-  }],
-  "vim.vimrc.enable": true,
-  "vim.vimrc.path": "~/Work/config/.vimrc"
+  }
 }
+
