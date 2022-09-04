@@ -83,17 +83,75 @@
     "commands": ["explorer.newFolder"],
     "silent": true
   }, {
-    "before": ["<leader>", "t", "t"],
-    "commands": ["workbench.action.toggleSidebarVisibility"]
+    "before": ["<leader>", "t", "e"],
+    "commands": ["workbench.action.toggleSidebarVisibility"],
+    "silent": true
+  }, {
+    "before": ["<leader>", "f", "e"],
+    "commands": ["workbench.files.action.focusFilesExplorer"],
+    "silent": true
+  }, {
+    "before": ["<leader>", "f", "t"],
+    "commands": ["terminal.focus"],
+    "silent": true
   }, {
     "before": ["g", "d"],
-    "commands": ["editor.action.revealDefinition"]
+    "commands": ["editor.action.revealDefinition"],
+    "silent": true
   }, {
     "before": ["g", "b"],
-    "commands": ["workbench.action.navigateBack"]
+    "commands": ["workbench.action.navigateBack"],
+    "silent": true
   }, {
-    "before": ["B"],
-    "commands": ["editor.action.jumpToBracket"]
+    "before": ["<leader>", "B"],
+    "commands": ["editor.action.jumpToBracket"],
+    "silent": true
+  }, {
+    "before": ["<leader>", "f", "f"],
+    "commands": ["workbench.action.quickOpen"],
+    "silent": true,
+  }, {
+    "before": ["<leader>", "Q"],
+    "commands": ["workbench.action.closeAllGroups"],
+    "silent": true
+  }, {
+    "before": ["<leader>", "s", "o"],
+    "commands": ["workbench.action.openWorkspace"],
+    "silent": true
+  }, {
+    "before": ["<leader>", "s", "s"],
+    "commands": ["workbench.action.saveWorkspaceAs"],
+    "silent": true
+  }, {
+    "before": ["<leader>", "s", "w"],
+    "commands": ["workbench.action.removeRootFolder"],
+    "silent": true
+  }, {
+    "before": ["<leader>", "s", "n"],
+    "commands": ["workbench.action.addRootFolder"],
+    "silent": true
+  }, {
+    "before": ["<leader>", "o"],
+    "commands": ["workbench.action.files.openFile"],
+    "silent": true
+  }, {
+    "before": ["<leader>", "W", "n"],
+    "commands": ["workbench.action.splitEditorToRightGroup"]
+  }, {
+    "before": ["<leader>", "W", "l"],
+    "commands": ["workbench.action.focusRightGroup"]
+  }, {
+    "before": ["<leader>", "W", "h"],
+    "commands": ["workbench.action.focusLeftGroup"]
+  }, {
+    "before": ["<leader>", "W", "L"],
+    "commands": ["workbench.action.moveEditorToRightGroup"] 
+  }, {
+    "before": ["<leader>", "W", "H"],
+    "commands": ["workbench.action.moveEditorToLeftGroup"] 
+  }, {
+    "before": ["<leader>", "R"],
+    "commands": ["rest-client.request"],
   }],
   "vim.insertModeKeyBindingsNonRecursive": [{
     "before": ["<C->>"],
@@ -102,7 +160,13 @@
   "vim.visualModeKeyBindingsNonRecursive": [{
     "before": ["<leader>", "e"],
     "commands": ["editor.action.smartSelect.expand"]
+  }, {
+    "before": ["U"],
+    "commands": ["editor.action.moveLinesUpAction"]
+  }, {
+    "before": ["I"],
+    "commands": ["editor.action.moveLinesDownAction"]
   }],
   "vim.vimrc.enable": true,
-  "vim.vimrc.path": "~/Work/config/.vimrc"
+  "vim.vimrc.path": "~/Work/config/vscode-vim/.vimrc"
 }

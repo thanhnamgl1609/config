@@ -19,14 +19,9 @@ vmap > >gv
 "*****************************************************************************
 "" Mappings
 "*****************************************************************************
-" session management
-nnoremap <leader>so :OpenSession<Space>
-nnoremap <leader>ss :SaveSession<Space>
-nnoremap <leader>sc :CloseSession<CR>
-
 "" Tabs
 nnoremap <Tab> gt
-nnoremap <S-Tab> gt
+nnoremap <S-Tab> gT
 
 " My custom keybinding
 " Navigation
@@ -82,10 +77,6 @@ noremap <C-x> "+x<R>
 noremap YY "+y<CR>
 noremap <leader>p "+gP<CR>
 
-" Swap line
-vnoremap J :m '>+1<CR>gv=gv
-vnoremap K :m '<-2<CR>gv=gv
-
 " Wrap with racket
 vnoremap " <Esc>`<i"<Esc>`>la"<Esc>
 vnoremap ' <Esc>`<i'<Esc>`>la'<Esc>
@@ -97,6 +88,3 @@ nnoremap <C-u> viwU<Esc>
 nnoremap <C-l> viwu<Esc>
 inoremap <C-u> viwU<Esc>
 inoremap <C-l> viwu<Esc>
-
-"Recovery commands from history through FZF
-nmap <leader>y :History:<CR>
