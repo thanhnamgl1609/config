@@ -15,17 +15,8 @@
   "workbench.iconTheme": "vscode-icons",
   "liveServer.settings.donotShowInfoMsg": true,
   "update.showReleaseNotes": false,
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
-  },
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "editor.defaultFormatter": "rvest.vs-code-prettier-eslint",
   "prettier.singleQuote": true,
@@ -40,9 +31,6 @@
   "typescript.autoClosingTags": false,
   "search.useIgnoreFiles": false,
   "debug.javascript.autoAttachFilter": "disabled",
-  "[python]": {
-    "editor.defaultFormatter": "ms-python.python"
-  },
   "terminal.integrated.enableMultiLinePasteWarning": false,
   "github.copilot.enable": {
     "*": true,
@@ -58,18 +46,11 @@
     "row-class-name"
   ],
   "prettier.proseWrap": "always",
-  "prettier.configPath": ".prettierrc",
   "[dockerfile]": {
     "editor.defaultFormatter": "ms-azuretools.vscode-docker"
   },
   "workbench.editor.openSideBySideDirection": "down",
   "editor.formatOnSave": true,
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
-  },
-  "[typescript]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
-  },
   "vim.leader": ",",
   "vim.handleKeys": {
     "<C-f>": false,
@@ -117,6 +98,10 @@
   }, {
     "before": ["<leader>", "s", "o"],
     "commands": ["workbench.action.openWorkspace"],
+    "silent": true
+  }, {
+    "before": ["<leader>", "s", "c"],
+    "commands": ["workbench.action.closeFolder"],
     "silent": true
   }, {
     "before": ["<leader>", "s", "s"],
@@ -168,5 +153,8 @@
     "commands": ["editor.action.moveLinesDownAction"]
   }],
   "vim.vimrc.enable": true,
-  "vim.vimrc.path": "~/Work/config/vscode-vim/.vimrc"
+  "vim.vimrc.path": "~/Work/config/vscode-vim/.vimrc",
+  "auto-close-tag.disableOnLanguage": [
+    "typescript"
+  ]
 }
