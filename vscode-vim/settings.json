@@ -137,6 +137,22 @@
   }, {
     "before": ["<leader>", "R"],
     "commands": ["rest-client.request"],
+  }, {
+  // changeCaseExtension
+    "before": ["<leader>", "T", "u"],
+    "commands": ["extension.changeCase.constant"]
+  }, {
+    "before": ["<leader>", "T", "l"],
+    "commands": ["extension.changeCase.lower"]
+  }, {
+    "before": ["<leader>", "T", "c"],
+    "commands": ["extension.changeCase.camel"]
+  }, {
+    "before": ["<leader>", "T", "s"],
+    "commands": ["extension.changeCase.kebab"]
+  }, {
+    "before": ["<leader>", "T", "p"],
+    "commands": ["extension.changeCase.pascal"]
   }],
   "vim.insertModeKeyBindingsNonRecursive": [{
     "before": ["<C->>"],
@@ -151,10 +167,27 @@
   }, {
     "before": ["I"],
     "commands": ["editor.action.moveLinesDownAction"]
+  }, {
+  // changeCaseExtension
+    "before": ["<leader>", "T", "u"],
+    "commands": ["extension.changeCase.constant"]
+  }, {
+    "before": ["<leader>", "T", "l"],
+    "commands": ["extension.changeCase.lower"]
+  }, {
+    "before": ["<leader>", "T", "c"],
+    "commands": ["extension.changeCase.camel"]
+  }, {
+    "before": ["<leader>", "T", "s"],
+    "commands": ["extension.changeCase.kebab"]
+  }, {
+    "before": ["<leader>", "T", "p"],
+    "commands": ["extension.changeCase.pascal"]
   }],
   "vim.vimrc.enable": true,
   "vim.vimrc.path": "~/Work/config/vscode-vim/.vimrc",
   "auto-close-tag.disableOnLanguage": [
     "typescript"
-  ]
+  ],
+  "explorer.openEditors.sortOrder": "fullPath"
 }

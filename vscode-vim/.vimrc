@@ -82,9 +82,3 @@ vnoremap " <Esc>`<i"<Esc>`>la"<Esc>
 vnoremap ' <Esc>`<i'<Esc>`>la'<Esc>
 vnoremap { <Esc>`<i{<Esc>`>la}<Esc>
 vnoremap [ <Esc>`<i[<Esc>`>la]<Esc>
-
-" Transform text
-nnoremap <C-u> viwU<Esc>
-nnoremap <C-l> viwu<Esc>
-inoremap <C-u> viwU<Esc>
-inoremap <C-l> viwu<Esc>
